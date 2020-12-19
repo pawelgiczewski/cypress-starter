@@ -1,0 +1,12 @@
+// This file is required to make `npm run tsc` work.
+{
+    "include": [
+        "cypress/integration/*.ts",
+        "cypress/integration/**/*.ts"
+    ],
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es5", "dom"],
+        "types": ["cypress", "node"]
+      }
+}

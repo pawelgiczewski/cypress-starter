@@ -1,0 +1,30 @@
+{
+  "name": "cypress-starter",
+  "version": "1.0.0",
+  "description": "Cypress testing starter - with typescript and Cucumber",
+  "scripts": {
+    "cypress:open": "node_modules/.bin/cypress open",
+    "precypress:run": "npm run lint",
+    "cypress:run": "node_modules/.bin/cypress run",
+    "cypress:run:tag": "./node_modules/.bin/cypress-tags run -e $TAGS",
+    "lint": "node_modules/.bin/tslint --project ./tsconfig.json",
+    "postlint": "npm run tsc",
+    "test:ci": "node_modules/.bin/cypress run",
+    "tsc": "node_modules/.bin/tsc --pretty --noEmit"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "output"
+    }
+  },
+  "devDependencies": {
+    "@cypress/browserify-preprocessor": "3.0.1",
+    "cypress": "6.1.0",
+    "cypress-cucumber-preprocessor": "4.0.0",
+    "eslint-plugin-json-format": "2.0.1",
+    "tslint": "5.9.1",
+    "typescript": "3.9.5"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules
+.tmp
+.sass-cache
+.DS_Store
+npm-debug.log
+tmp
+.projects
+*.orig
+
+output
+screenshots
+videos
+out.js
+snapshots.js
+.nyc_output
+coverage
+dist
