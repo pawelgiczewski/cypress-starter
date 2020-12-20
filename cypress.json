@@ -1,5 +1,6 @@
 {
     "testFiles": "**/*.feature",
     "screenshotsFolder": "output/screenshots",
-    "videosFolder": "output/videos"
+    "videosFolder": "output/videos",
+    "chromeWebSecurity": false
 }

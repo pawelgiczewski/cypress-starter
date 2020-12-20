@@ -10,7 +10,13 @@ Feature: Test feature
     Given Open site
     Then Click link
 
-  @all @ignore
+  @all
   Scenario: This is test scenario 3
     Given Open site
     Then Click link
+
+  @all @stubbed
+  Scenario: Test mock
+    Given Open site
+    Then Click navigating to api
+    Then Check if stubbed json is displayed
