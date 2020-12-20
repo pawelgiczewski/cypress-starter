@@ -5,5 +5,5 @@ Given(/Open site/, () => {
 });
 
 Then(/Click link/, () => {
-    cy.get('a').contains('click me').click()
+    cy.clickLink('click me')
 });
