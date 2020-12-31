@@ -8,4 +8,4 @@ before_install:
 - docker pull $IMAGE
 
 script:
-- npm run cypress:run
+- docker run --rm -ti $IMAGE "npm run cypress:run"
