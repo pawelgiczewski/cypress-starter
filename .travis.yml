@@ -1,0 +1,11 @@
+language: minimal
+
+services:
+  - docker
+
+before_install:
+- export IMAGE=cypress/browsers:node12.18.3-chrome87-ff82
+- docker pull $IMAGE
+
+script:
+- npm run cypress:run
