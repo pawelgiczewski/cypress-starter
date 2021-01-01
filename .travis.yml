@@ -3,9 +3,5 @@ language: minimal
 services:
   - docker
 
-before_install:
-- export IMAGE=cypress/browsers:node12.18.3-chrome87-ff82
-- docker pull $IMAGE
-
 script:
-- docker run --rm -ti $IMAGE "npm run cypress:run"
+- docker run -it -v $PWD:/e2e -w /e2e cypress/included:6.2.0
