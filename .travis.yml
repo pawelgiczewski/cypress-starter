@@ -3,6 +3,9 @@ language: node_js
 services:
   - docker
 
+before_install:
+  - npm i -g npm@6.9.0
+
 script:
 - npm install
 - docker run -it -v $PWD:/e2e -w /e2e cypress/included:6.2.0
