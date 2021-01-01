@@ -1,0 +1,8 @@
+language: minimal
+
+services:
+  - docker
+
+script:
+- docker run -it -v $PWD:/e2e -w /e2e --entrypoint=npm cypress/included:6.2.0 install
+- docker run -it -v $PWD:/e2e -w /e2e cypress/included:6.2.0
