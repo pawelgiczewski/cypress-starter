@@ -1,8 +1,13 @@
 language: minimal
 
+cache:
+  directories:
+    - $TRAVIS_BUILD_DIR/node_modules/
+
 services:
   - docker
 
 script:
+- docker pull cypress/included:6.2.0
 - docker run -it -v $PWD:/e2e -w /e2e --entrypoint=npm cypress/included:6.2.0 install
 - docker run -it -v $PWD:/e2e -w /e2e cypress/included:6.2.0
