@@ -1,5 +1,5 @@
 {
-    "baseUrl": "http://localhost:8080",
+    "baseUrl": "http://suburbs-demo-app.s3-website.eu-central-1.amazonaws.com",
     "testFiles": "**/*.feature",
     "screenshotsFolder": "output/screenshots",
     "videosFolder": "output/videos",
